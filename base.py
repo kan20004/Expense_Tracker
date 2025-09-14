@@ -1,4 +1,4 @@
-# base.py
+
 import sqlite3
 
 # -----------------
@@ -46,3 +46,4 @@ def get_total(category=None):
         cursor.execute("SELECT SUM(amount) FROM expenses")
     total = cursor.fetchone()[0]
     return total or 0.0
+
